@@ -3,9 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" src="./styles.css" />
+    <link rel="stylesheet" href="styles.css" />
     <script src="./app.js" defer></script>
-    <title>Document</title>
+    <title>Flower Clicker Game</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h1>Flower Clicker Game</h1>
+    </header>
+    <main>
+      <section id="main-section">
+        <img
+          id="main-clicker"
+          src="./media/images/purple_flower.png"
+          alt="a cartoon purple flower with a yellow centre"
+        />
+        <audio
+          id="clicker-sound"
+          src="./media/sounds/clicker_click.mp3"
+        ></audio>
+        <div>
+          <p id="total-flower-count"></p>
+          <p id="flowers-per-second"></p>
+        </div>
+      </section>
+      <section id="upgrades-section">
+        <h2>Buy Upgrades</h2>
+        <audio
+          id="upgrade-click"
+          src="./media/sounds/upgrade_click.mp3"
+        ></audio>
+        <audio
+          id="not-enough-flowers"
+          src="./media/sounds/alert_sound.mp3"
+        ></audio>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
 </html>
